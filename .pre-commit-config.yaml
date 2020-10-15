@@ -1,0 +1,29 @@
+---
+default_stages:
+  - commit
+  - push
+repos:
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
+    rev: v2.2.3
+    hooks:
+      - id: trailing-whitespace
+        exclude: '.mr'
+      - id: check-merge-conflict
+      - id: check-symlinks
+  - repo: 'https://github.com/adrienverge/yamllint'
+    rev: v1.15.0
+    hooks:
+      - id: yamllint
+  - repo: 'https://github.com/jorisroovers/gitlint.git'
+    rev: v0.11.0
+    hooks:
+      - id: gitlint
+        stages:
+          - commit-msg
+  - repo: local
+    hooks:
+      - id: run-local-test
+        name: 'Run dhall lint'
+        entry: 'make dhall-lint'
+        language: system
+        pass_filenames: false

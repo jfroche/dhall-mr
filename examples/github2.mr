@@ -1,0 +1,12 @@
+[$HOME/projects/github/dhall-lang/dhall-lang]
+checkout = git clone git@github.com:dhall-lang/dhall-lang.git dhall-lang
+fixups = true
+remotes = 
+  
+[$HOME/projects/github/dhall-lang/dhall-haskell]
+checkout = git clone git@github.com:jfroche/dhall-haskell.git -b some-branch 
+fixups = true
+remotes = 
+  git_add_remotes "
+    upstream https://github.com/dhall-lang/dhall-haskell.git"
+
