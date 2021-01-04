@@ -7,5 +7,7 @@ in  λ(source : Source.Source) →
         , Ssh = λ(source : Source.SSH.Type) → source.repository
         , GitHubSsh = λ(source : Source.GitHubSSH.Type) → source.repository
         , GitHubHttps = λ(source : Source.GitHubHTTPS.Type) → source.repository
+        , GitLabSsh = λ(source : Source.GitLabSSH.Type) → source.repository
+        , GitLabHttps = λ(source : Source.GitLabHTTPS.Type) → source.repository
         }
         source

@@ -34,5 +34,11 @@ in  λ(source : Source.Source) →
         , GitHubHttps =
             λ(source : Source.GitHubHTTPS.Type) →
               "https://github.com/${source.user}/${source.repository}.git"
+        , GitLabSsh =
+            λ(source : Source.GitLabSSH.Type) →
+              "git@gitlab.com:${source.user}/${source.repository}.git"
+        , GitLabHttps =
+            λ(source : Source.GitLabHTTPS.Type) →
+              "https://gitlab.com/${source.user}/${source.repository}.git"
         }
         source

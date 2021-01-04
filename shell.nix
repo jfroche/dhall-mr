@@ -16,6 +16,7 @@ in
       niv
       dhall
       fd
+      gnumake
       (haskellPackages.ghcWithPackages (p: with p; [ shake dhall shake_dhall ]))
     ];
   }
