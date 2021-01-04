@@ -1,4 +1,4 @@
-    ./schemas/package.dhall sha256:e50a3fd104dd59ac0e46f207e332c6226cbbe0d6aa318cd21232b85c4ccb46f7
+    ./schemas/package.dhall sha256:3c755f66d72dc495e04c154834bede555c03b253657499e8681e1a420d4d1a21
 /\  { Repository/show =
-        ./render/repository.dhall sha256:db583a29e058d512da15a49b5a441b1bcd8b1e34efce4e50ecefd648ee8cfb61
+        ./render/repository.dhall sha256:eda49c0f9b9bbe31125803e4444a81606659e1c221aa4343c0693f98f20fc064
     }

@@ -14,8 +14,8 @@ let httpsSource =
 let sshSource =
       λ(source : Source.SSH.Type) →
         if    equal source.port 22
-        then  "git@${source.host}:${source.project}/${source.repository}.git"
-        else  "ssh://git@${source.host}:${show
+        then  "${source.user}@${source.host}:${source.project}/${source.repository}.git"
+        else  "ssh://${source.user}@${source.host}:${show
                                             source.port}/${source.project}/${source.repository}.git"
 
 in  λ(source : Source.Source) →

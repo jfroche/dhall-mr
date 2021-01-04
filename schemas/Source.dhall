@@ -1,7 +1,7 @@
 let SSH =
       { Type =
-          { host : Text, project : Text, repository : Text, port : Natural }
-      , default.port = 22
+          { host : Text, project : Text, repository : Text, port : Natural, user: Text }
+      , default = { port = 22, user = "git" }
       }
 
 let GitHubSSH = { Type = { user : Text, repository : Text } }
